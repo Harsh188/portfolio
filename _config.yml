@@ -35,13 +35,13 @@ url: "https://harshithmohankumar.com" # the base hostname & protocol for your si
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/portfolio" # the subpath of your site, e.g. "/blog".
+baseurl: "" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: Call_Me_Harsh18
-    github: harsh188
+    - { platform: github, user_url: "https://github.com/harsh188/" }
+    - { platform: twitter, user_url: "https://twitter.com/Call_Me_Harsh18" }
 
 # Set this to true to get LaTeX math equation support
 use_math: true
@@ -119,9 +119,9 @@ kramdown:
   syntax_highlighter: rouge
 
 # to limit size of xml as it can grow quite large.
-feed:
-  posts_limit: 5 #default posts_limit: 10
-  excerpt_only: true
+# feed:
+#   posts_limit: 5 #default posts_limit: 10
+#   excerpt_only: true
   
-exclude:
-  - settings.ini
+# exclude:
+#   - settings.ini
